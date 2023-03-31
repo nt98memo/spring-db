@@ -1,0 +1,23 @@
+CREATE TABLE sample_child (
+    id              BIGINT         NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    int_col         INT            NOT NULL,
+    long_col        BIGINT         NOT NULL,
+    decimal_col     DECIMAL(5,2)   NULL,
+    text_col        VARCHAR(255)   NULL,
+    password_col    VARCHAR(255)   NULL,
+    textarea_col    TEXT           NULL,
+    radio_col       TINYINT        NOT NULL,
+    select_col      TINYINT        NOT NULL,
+    date_col        DATE           NULL,
+    time_col        TIME           NOT NULL,
+    datetime_col    DATETIME       NULL,
+    parent_id       BIGINT         NOT NULL,
+    create_system   VARCHAR(255)   NOT NULL,
+    create_url      VARCHAR(255)   NOT NULL,
+    create_user_id  BIGINT         NOT NULL,
+    create_datetime DATETIME       NOT NULL,
+    update_system   VARCHAR(255)   NULL,
+    update_url      VARCHAR(255)   NULL,
+    update_user_id  BIGINT         NULL,
+    update_datetime DATETIME       NULL
+) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
